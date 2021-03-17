@@ -1,0 +1,6 @@
+<button type="button" (click) = "toggleParagraph()" class="btn btn-info">Display Details</button>
+<p *ngIf = "displayPara">Display Details Secret Pssword = tuna</p>
+<div *ngFor = "let time of displayTimeStamp; let i = index;" 
+[ngStyle]="{backgroundColor:getColor(i)}" 
+[ngClass]="{'white-text':i >=5}">
+{{time}}</div>
